@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		    <meta charset="UTF-8">
+		        <title>Document</title>
+	</head>
+	<body>
+		    <table>
+			            <tbody>
+					                <tr>
+								                {% for userprofile in userprofiles %}
+										                    <td>{{ userprofile.username }}</td>
+												                        <td>{{ userprofile.phone }}</td>
+															                    <td>{{ userprofile.age }}</td>
+																	                    {% endfor %}
+																			                </tr>
+																					        </tbody>
+																						    </table>
+	</body>
+</html>
